@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>API Documentation</h1>
+      <p class="subtitle">
+        Everything you need to interact with the best API to ever exist.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="base-section">
+        <h2>Base</h2>
+        <div class="endpoint">
+          <h3>Base url: http://localhost:5021/api/</h3>
+          <p>
+            The base url doesn't contain any data itself, so you have to combine
+            it with one of the available resources. All requests are
+            GET-requests which uses HTTP and return JSON.
+          </p>
+          <div class="code-snippet">
+            <pre><code>
+{
+  "merch": "http://localhost:5021/api/merch",
+  "staff": "http://localhost:5021/api/staff"
+}
+            </code></pre>
+          </div>
+          <p>Currently available resources:</p>
+          <ul>
+            <li>Merch: used to get all the merch.</li>
+            <li>Staff: used to get all the staff.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="schema-section">
+        <h2>Merch schema</h2>
+        <div class="schema-table">
+          <table>
+            <tr>
+              <th>Key</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>int</td>
+              <td>The id of the merch.</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>The name of the merch.</td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>string</td>
+              <td>The type of merch.</td>
+            </tr>
+            <tr>
+              <td>price</td>
+              <td>int</td>
+              <td>How much the merch costs.</td>
+            </tr>
+            <tr>
+              <td>size</td>
+              <td>string</td>
+              <td>What sizes the merch has available.</td>
+            </tr>
+            <tr>
+              <td>amount</td>
+              <td>int</td>
+              <td>The amount of merch in stock.</td>
+            </tr>
+            <tr>
+              <td>image</td>
+              <td>string</td>
+              <td>An image of the merch.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <br />
+
+      <section class="endpoint-section">
+        <h2>Merch endpoints</h2>
+        <div class="endpoint">
+          <h3>Get all merch</h3>
+          <p>Retrieve a list of all merch in the database.</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/merch </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>[
+  {
+    "id": 1,
+    "name": "Make America Great Again",
+    "type": "Caps",
+    "price": 29,
+    "size": "L, M",
+    "amount": 76,
+    "image": "maga-caps.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Proud American",
+    "type": "T-shirt",
+    "price": 19,
+    "size": "M, L, XL, XXL, XXXL",
+    "amount": 435,
+    "image": "proudwhite-tshirt.jpg"
+  },
+  {
+    "id": 3,
+    "name": "French Trump",
+    "type": "Bracelet",
+    "price": 99,
+    "size": "ONE/SIZE",
+    "amount": 100,
+    "image": "goldtrump-bracelet.jpg"
+  },
+  ...
+]</code></pre>
+          </div>
+        </div>
+        <div class="endpoint">
+          <h3>Get merch by id</h3>
+          <p>Retrieve one single item of merch by their id.</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/merch/1 </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>{
+  "id": 1,
+    "name": "Make America Great Again",
+    "type": "Caps",
+    "price": 29,
+    "size": "L, M",
+    "amount": 76,
+    "image": "maga-caps.jpg"
+}</code></pre>
+          </div>
+        </div>
+        <div class="endpoint">
+          <h3>Get merch by type</h3>
+          <p>Retrieve all merch within that type/category..</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/merch/type/t-shirt </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>[
+  {
+    "id": 2,
+    "name": "Proud American",
+    "type": "T-shirt",
+    "price": 19,
+    "size": "M, L, XL, XXL, XXXL",
+    "amount": 435,
+    "image": "proudwhite-tshirt.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Stars and Stripes",
+    "type": "T-shirt",
+    "price": 19,
+    "size": "XXL, XXXL, XXXXL",
+    "amount": 24,
+    "image": "starsandstripes-tshirt.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Young Trump",
+    "type": "T-shirt",
+    "price": 19,
+    "size": "L",
+    "amount": 120,
+    "image": "wavingflag-tshirt.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Losing is for losers",
+    "type": "T-shirt",
+    "price": 19,
+    "size": "XXXL",
+    "amount": 1,
+    "image": "merchicon.png"
+  }
+]</code></pre>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <h3>Get merch types</h3>
+          <p>An array of all types of merch that exists.</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/merch/types </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>[
+  "Caps",
+  "T-shirt",
+  "Bracelet",
+  "Keychain",
+  "Toy",
+  "Sweater"
+]</code></pre>
+          </div>
+        </div>
+      </section>
+      <br />
+
+      <section class="schema-section">
+        <h2>Staff schema</h2>
+        <div class="schema-table">
+          <table>
+            <tr>
+              <th>Key</th>
+              <th>Type</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>int</td>
+              <td>The id of a staff member.</td>
+            </tr>
+            <tr>
+              <td>firstname</td>
+              <td>string</td>
+              <td>The staff member's firstname.</td>
+            </tr>
+            <tr>
+              <td>lastname</td>
+              <td>string</td>
+              <td>The staff member's lastname.</td>
+            </tr>
+            <tr>
+              <td>birthdate</td>
+              <td>string</td>
+              <td>The staff member's birthday.</td>
+            </tr>
+            <tr>
+              <td>email</td>
+              <td>string</td>
+              <td>The company email to the staff member.</td>
+            </tr>
+            <tr>
+              <td>phone</td>
+              <td>int</td>
+              <td>The staff member's phonenumber.</td>
+            </tr>
+            <tr>
+              <td>role</td>
+              <td>string</td>
+              <td>What role/title the staff member has.</td>
+            </tr>
+            <tr>
+              <td>image</td>
+              <td>string</td>
+              <td>An image of the staff member.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <br />
+      <section class="endpoint-section">
+        <h2>Staff endpoints</h2>
+        <div class="endpoint">
+          <h3>Get all staff members</h3>
+          <p>Retrieve a list of all the staff members in the database.</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/staff </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>[
+  {
+  "id": 1,
+    "firstname": "Emily",
+    "lastname": "Johnson",
+    "birthdate": "01.03.1998",
+    "email": "emilyjohnson@trump4prez.com",
+    "phone": 43765894,
+    "role": "Chairperson",
+    "image": "employee1.png"
+  },
+  {
+    "id": 2,
+    "firstname": "Sarah",
+    "lastname": "Brown",
+    "birthdate": "06.02.1996",
+    "email": "sarahbrown@trump4prez.com",
+    "phone": 98476523,
+    "role": "Policy Advisor",
+    "image": "employee2.png"
+  },
+  {
+    "id": 3,
+    "firstname": "Michael",
+    "lastname": "Smith",
+    "birthdate": "01.01.1990",
+    "email": "michaelsmith@trump4prez.com",
+    "phone": 32657869,
+    "role": "Logistics Coordinator",
+    "image": "employee3.png"
+  },
+  ...
+]  </code></pre>
+          </div>
+        </div>
+
+        <div class="endpoint">
+          <h3>Get staff by id</h3>
+          <p>Retrieve one single staff member by their id.</p>
+          <div class="code-snippet">
+            <code> GET http://localhost:5021/api/staff/1 </code>
+          </div>
+          <br />
+          <div class="code-snippet">
+            <pre><code>{
+  "id": 1,
+  "firstname": "Emily",
+  "lastname": "Johnson",
+  "birthdate": "01.03.1998",
+  "email": "emilyjohnson@trump4prez.com",
+  "phone": 43765894,
+  "role": "Chairperson",
+  "image": "employee1.png"
+}</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; 2024 Trump Administration - All the greatest API rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

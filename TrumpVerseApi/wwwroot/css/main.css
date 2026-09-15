@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  border-collapse: collapse !important;
+  width: 100%;
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: 1px solid black !important;
+  padding: 8px !important;
+}
+
+/* Endpoint Section */
+.endpoint-section h2,
+.auth-section h2,
+.base-section h2,
+.imageupload-section h2 {
+  color: #0056b3;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 0.5rem;
+}
+
+.endpoint {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+}
+
+.endpoint h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.endpoint p {
+  margin: 0.5rem 0;
+}
+
+.code-snippet {
+  background: #272822;
+  color: #f8f8f2;
+  padding: 0.8rem;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  overflow-x: auto;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/api-documentation.html",
+      "PackagePath": "staticwebassets/api-documentation.html"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/apiicon.png",
+      "PackagePath": "staticwebassets/images/apiicon.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/darkusabanner.png",
+      "PackagePath": "staticwebassets/images/darkusabanner.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee1.png",
+      "PackagePath": "staticwebassets/images/employee1.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee2.png",
+      "PackagePath": "staticwebassets/images/employee2.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee3.png",
+      "PackagePath": "staticwebassets/images/employee3.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee4.png",
+      "PackagePath": "staticwebassets/images/employee4.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee5.png",
+      "PackagePath": "staticwebassets/images/employee5.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee6.png",
+      "PackagePath": "staticwebassets/images/employee6.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee7.png",
+      "PackagePath": "staticwebassets/images/employee7.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/employee8.png",
+      "PackagePath": "staticwebassets/images/employee8.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/goldtrump-bracelet.jpg",
+      "PackagePath": "staticwebassets/images/goldtrump-bracelet.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/maga-caps.jpg",
+      "PackagePath": "staticwebassets/images/maga-caps.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/merchicon.png",
+      "PackagePath": "staticwebassets/images/merchicon.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/proudwhite-tshirt.jpg",
+      "PackagePath": "staticwebassets/images/proudwhite-tshirt.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/stafficon.jpg",
+      "PackagePath": "staticwebassets/images/stafficon.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/stafficon.png",
+      "PackagePath": "staticwebassets/images/stafficon.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/stafficon2.png",
+      "PackagePath": "staticwebassets/images/stafficon2.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/starsandstripes-tshirt.jpg",
+      "PackagePath": "staticwebassets/images/starsandstripes-tshirt.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/trump-keychain.jpg",
+      "PackagePath": "staticwebassets/images/trump-keychain.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/trumpbanner.png",
+      "PackagePath": "staticwebassets/images/trumpbanner.png"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/trumpbear.jpeg",
+      "PackagePath": "staticwebassets/images/trumpbear.jpeg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/usa45-longsleeve.jpg",
+      "PackagePath": "staticwebassets/images/usa45-longsleeve.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/usabanner.jpg",
+      "PackagePath": "staticwebassets/images/usabanner.jpg"
+    },
+    {
+      "Id": "/Users/sarabsundby/Documents/Kristiania/Høst24/Webutvikling/NewExam/TrumpVerseApi/wwwroot/images/wavingflag-tshirt.jpg",
+      "PackagePath": "staticwebassets/images/wavingflag-tshirt.jpg"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.TrumpVerseApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.TrumpVerseApi.props",
+      "PackagePath": "build\\TrumpVerseApi.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.TrumpVerseApi.props",
+      "PackagePath": "buildMultiTargeting\\TrumpVerseApi.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.TrumpVerseApi.props",
+      "PackagePath": "buildTransitive\\TrumpVerseApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
